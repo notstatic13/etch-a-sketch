@@ -52,6 +52,13 @@ function createGrid(size) {
 
 // handle hover effect with or without darkening
 function applyColorEffect(square) {
+    if (colorMode.value === 'eraser') {
+    square.style.removeProperty('background-color');
+    square.style.removeProperty('opacity');
+    square.dataset.opacity = 0;
+    return;
+  }
+
   const selectedColor = colorMode.value;
   const darkening = darkenToggle.checked;
 
