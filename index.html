@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Etch-a-Sketch</h1>
+
+    <div class="controls">
+      <button id="reset-btn">Change Grid Size</button>
+
+      <label for="color-mode">Color:</label>
+      <select id="color-mode">
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="indigo">Indigo</option>
+        <option value="violet">Violet</option>
+        <option value="random">Random RGB</option>
+      </select>
+
+      <button id="clear-btn">Clear</button>
+
+      <label for="darken-toggle">
+        <input type="checkbox" id="darken-toggle" checked />
+        Darkening Effect
+      </label>
+    </div>
+
+    <section id="grid-container"></section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
